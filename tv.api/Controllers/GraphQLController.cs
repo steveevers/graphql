@@ -29,7 +29,7 @@ namespace tv.api.Controllers
             if (result.Errors?.Count() > 0)
                 return BadRequest();
                 
-            return Ok(result);
+            return Ok(result.Data);
         }
     }
 }
